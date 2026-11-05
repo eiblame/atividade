@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Biblioteca Flask</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Flask</h1>
+        <nav>
+            <a href="{{ url_for('inicio') }}">Início</a>
+            <!-- Adicione aqui um link para a listagem de livros. -->
+        </nav>
+    </header>
+
+    <main>
+        {% block conteudo %}{% endblock %}
+    </main>
+</body>
+</html>
