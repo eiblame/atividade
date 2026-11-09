@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
+{% block titulo %}Início{% endblock %}
+
 {% block conteudo %}
-    <h2>Bem-vindo!</h2>
-    <p>Esta aplicação usará uma lista de dicionários para representar livros.</p>
-    <p>Implemente a rota <code>/livros</code> para começar.</p>
+<h1>Biblioteca da turma</h1>
+<p>Bem-vindo! <a href="{{ url_}}for('listar_livros') ">Ver livros</a></p>
 {% endblock %}
